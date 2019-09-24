@@ -1,9 +1,9 @@
-﻿using DemoLibrary;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Unity;
 
 namespace ConsoleUI
 {
@@ -11,9 +11,10 @@ namespace ConsoleUI
     {
         static void Main(string[] args)
         {
-            BusinessLogic businessLogic = new BusinessLogic();
+            var _container = ContainerConfig.Configure();
+            IApplication app = _container.Resolve<IApplication>();
 
-            businessLogic.ProcessData();
+            app.Run();
 
             Console.ReadLine();
         }
