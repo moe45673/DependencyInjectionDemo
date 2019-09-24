@@ -13,7 +13,7 @@ namespace LiskovSubPrinciple
         {
             //Boilerplate Code
             var app = new AppRunner();
-            app.Run(new ElectricDuck());
+            app.Run(new RegularDuck());
 
             Console.WriteLine();
             Console.WriteLine("Press any key to exit....");
