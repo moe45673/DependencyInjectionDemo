@@ -24,7 +24,7 @@ namespace LiskovSubPrinciple.BaseClass
         /// <summary>
         /// Changes IsSwimming state to false
         /// </summary>
-        /// <exception cref="InvalidOperationException">If Duck is already not swimming, will throw exception</exception>
+        /// <exception cref="InvalidOperationException">Thrown when Duck is not already in swimming state</exception>
         public virtual void StopSwimming()
         {
             if (!IsSwimming)
