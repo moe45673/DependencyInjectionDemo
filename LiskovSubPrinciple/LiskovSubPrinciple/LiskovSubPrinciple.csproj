@@ -43,8 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseClass\WidgetBase.cs" />
-    <Compile Include="ConcreteClass\BrokenWidget.cs" />
+    <Compile Include="AppRunner.cs" />
+    <Compile Include="BaseClass\DuckBase.cs" />
+    <Compile Include="ConcreteClass\RegularDuck.cs" />
+    <Compile Include="ConcreteClass\ElectricDuck.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
