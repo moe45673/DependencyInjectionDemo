@@ -20,7 +20,7 @@ namespace ConsoleUI
             container.RegisterType<IApplication, Application>(new SingletonLifetimeManager());
 
             container.RegisterType<IDataAccess, DataAccess>(new TransientLifetimeManager());
-            container.RegisterType<IBusinessLogic, BusinessLogic>();
+            container.RegisterType<IBusinessLogic, BusinessLogic2>();
             container.RegisterType<ILogger, Logger>();
 
             return container;
